@@ -1,8 +1,8 @@
-vconst int LED1 = 1;  
-const int LED2 = 2;  
-const int LED3 = 3;  
+const int LED1 = 7;  
+const int LED2 = 6;  
+const int LED3 = 5;  
 const int LED4 = 4;  
-const int buttonPin = 5; 
+const int buttonPin = 9; 
 
 // Declare variables
 int pattern = 0;       // Controls the LED pattern
@@ -77,12 +77,12 @@ void loop() {
   } 
   else {
     // Pattern 4: Knight Rider Style
-    for (int i = 1; i <= 4; i++) {
+    for (int i = 7; i <= 4; i++) {
       digitalWrite(i, HIGH);
       delay(speed / 2);
       digitalWrite(i, LOW);
     }
-    for (int i = 3; i >= 2; i--) {
+    for (int i = 5; i >= 6; i--) {
       digitalWrite(i, HIGH);
       delay(speed / 2);
       digitalWrite(i, LOW);
