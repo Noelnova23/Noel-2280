@@ -51,7 +51,7 @@ void loop() {
         analogWrite(pwmLedPin2, brightness);
         
         // Play buzzer if brightness changes
-        if (brightness = !prevBrightness) {
+        if (brightness != prevBrightness) {
             tone(buzzerPin, 1000, 1000); 
             Serial.println("Buzzer Activated");
         }
