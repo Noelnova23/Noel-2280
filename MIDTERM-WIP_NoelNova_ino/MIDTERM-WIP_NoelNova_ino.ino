@@ -1,7 +1,7 @@
-const int potPin = A0;       
-const int buttonPin = 2;    
+const int potPin = A5;       
+const int buttonPin = 4;    
 const int pwmLedPin = 9;     
-const int digitalLedPin = 7; 
+const int ledPin = 7; 
 
 int potValue = 0;
 int buttonState = 0;
@@ -20,8 +20,8 @@ const int numLevels = 5;
 void setup() {
     pinMode(buttonPin, INPUT);
     pinMode(pwmLedPin, OUTPUT);
-    pinMode(digitalLedPin, OUTPUT);
-    Serial.begin(9600);
+    pinMode(ledPin, OUTPUT);
+    Serial.begin(115200);
 }
 
 void loop() {
@@ -39,7 +39,7 @@ void loop() {
     if (buttonState == HIGH && currentMillis - previousMillis >= interval) {
         previousMillis = currentMillis;
         ledState = !ledState; // Toggle LED state
-        digitalWrite(digitalLedPin, ledState);
+        digitalWrite(ledPin, ledState);
     }
 
     for (int i = 0; i < numLevels; i++) {
