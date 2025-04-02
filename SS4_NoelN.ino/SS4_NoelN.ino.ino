@@ -1,5 +1,5 @@
-const int buttons[] = {18, 19, 21, 22}; // Button GPIOs
-const int leds[] = {23, 5, 4, 2};      // LED GPIOs
+const int buttons[] = {17, 18, 19, 21}; // Button GPIOs
+const int leds[] = {11, 12, 13, 14}; // LED GPIOs
 int buttonStates[4] = {0, 0, 0, 0};
 
 void setup() {
