@@ -10,7 +10,7 @@ int buttonSize = 150;
 
 void setup() {
     size(600, 600);
-    myPort = new Serial(this, Serial.list()[0], 9600);
+    myPort = new Serial(this, Serial.list()[0], 112500);
     myPort.bufferUntil('\n'); 
     generateSequence();
 }
