@@ -20,9 +20,9 @@ void setup() {
   // Load songs
   minim = new Minim(this);
   songs = new AudioPlayer[] {
-    minim.loadFile("dokkan1.mp3"),
-    minim.loadFile("dokkan2.mp3"),
-    minim.loadFile("dokkan3.mp3"),
+    minim.loadFile("MP3/dokkan1.mp3"),
+    minim.loadFile("MP3/dokkan2.mp3"),
+    minim.loadFile("MP3/dokkan3.mp3"),
   };
   songs[currentSong].loop();
 }

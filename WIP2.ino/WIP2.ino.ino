@@ -1,6 +1,6 @@
-const int buttonNext = 2;
-const int buttonPrev = 3;
-const int potPin = A0;
+const int buttonNext = 37;
+const int buttonPrev = 36;
+const int potPin = 6;
 const int ledPins[3] = {8, 9, 10};
 
 void setup() {
@@ -9,7 +9,7 @@ void setup() {
   for (int i = 0; i < 3; i++) {
     pinMode(ledPins[i], OUTPUT);
   }
-  Serial.begin(9600);
+  Serial.begin(115200);
   randomSeed(analogRead(0));
 }
 
